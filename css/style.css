@@ -10,7 +10,7 @@ canvas {
   height: 3%;
   cursor: pointer;
   position: absolute;
-  top: 420px;
+  top: 400px;
   left: 15px;
 }
 #gameOver {
