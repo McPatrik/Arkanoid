@@ -6,17 +6,17 @@ canvas {
   max-height: 90%;
 }
 #sound {
-  width: 1.7%;
-  height: 6%;
+  width: 2%;
+  height: 3%;
   cursor: pointer;
   position: absolute;
-  top: 435px;
+  top: 420px;
   left: 15px;
 }
 #gameOver {
   position: absolute;
-  width: 21.8%;
-  height: 96.5%;
+  min-width: 400px;
+  min-height: 500px;
   background: rgba(0,0,0, 0.5);
   display: none;
 }
