@@ -15,7 +15,7 @@ canvas {
 }
 #gameOver {
   position: absolute;
-  min-width: 400px;
+  min-width: 380px;
   min-height: 500px;
   background: rgba(0,0,0, 0.5);
   display: none;
