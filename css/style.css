@@ -6,8 +6,8 @@ canvas {
   max-height: 90%;
 }
 #sound {
-  width: 30px;
-  height: 30px;
+  width: 1.7%;
+  height: 6%;
   cursor: pointer;
   position: absolute;
   top: 435px;
@@ -15,8 +15,8 @@ canvas {
 }
 #gameOver {
   position: absolute;
-  width: 400px;
-  height: 500px;
+  width: 21.8%;
+  height: 96.5%;
   background: rgba(0,0,0, 0.5);
   display: none;
 }
