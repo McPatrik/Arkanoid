@@ -48,7 +48,6 @@ canvas {
 }
 .b {
   display: flex;
-  pointer-events: none;
 }
 #left{
   margin-left: 120px;
