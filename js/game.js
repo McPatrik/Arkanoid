@@ -18,6 +18,12 @@ let leftPressed = false;
 let rightPressed = false;
 let bricks = [];
 
+
+let mousePressedLeft = false;
+let mousePressedRight = false;
+
+
+
 const paddle = {
   x: cvs.width / 2 - paddleWidth / 2,
   y: cvs.height - paddleMarginBottom - paddleHeight,
@@ -27,6 +33,7 @@ const paddle = {
 }
 
 function drawPaddle() {
+  ctx.scale(1, 1);
   ctx.fillStyle = "#2e3548";
   ctx.fillRect(paddle.x, paddle.y, paddleWidth, paddleHeight);
 
@@ -81,6 +88,7 @@ const brick = {
 }
 
 function drawBall() {
+  ctx.scale(1, 1);
   ctx.beginPath();
 
   ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2);
@@ -219,6 +227,7 @@ function draw() {
   drawPaddle();
   drawBricks();
   drawBall();
+  h();
   showGameStats(score, 35, 25, scoreImg, 5, 5);
   showGameStats(life, cvs.width - 25, 25, lifeImg, cvs.width - 55, 5);
   showGameStats(level, cvs.width / 2, 25, levelImg, cvs.width / 2 - 30, 5);
@@ -268,6 +277,42 @@ const restart = document.getElementById("restart");
 restart.addEventListener("click", function(){
   location.reload();
 })
+left.addEventListener("mousedown", lft);
+left.addEventListener("mouseup", lftr);
+
+right.addEventListener("mousedown", lftq);
+right.addEventListener("mouseup", lftrw);
+
+function lft(){
+   if (!mousePressedLeft) {
+  mousePressedLeft = true;
+  } 
+}
+
+function lftr(){
+  if(mousePressedLeft) {
+    mousePressedLeft = false;
+  }
+}
+
+function lftq(){
+  if (!mousePressedRight) {
+ mousePressedRight = true;
+ } 
+}
+
+function lftrw(){
+ if(mousePressedRight) {
+   mousePressedRight = false;
+ }
+}
+function h() {
+  if (mousePressedLeft && paddle.x > 0) {
+    paddle.x -= paddle.dx;
+  } else if (mousePressedRight && paddle.x + paddle.width < cvs.width) {
+    paddle.x += paddle.dx;
+  }
+}
 
 function showYouWin() {
   gameover.style.display = "block";
