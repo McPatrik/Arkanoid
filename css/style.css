@@ -52,7 +52,9 @@ canvas {
 }
 #left{
   margin-left: 120px;
+  pointer-events: none;
 }
 #right{
   margin-left: 60px;
+  pointer-events: none;
 }
