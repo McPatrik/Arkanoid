@@ -51,7 +51,9 @@ canvas {
 }
 #left{
   margin-left: 120px;
+  touch-action: none;
 }
 #right{
   margin-left: 60px;
+  touch-action: none;
 }
