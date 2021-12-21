@@ -48,9 +48,10 @@ canvas {
 }
 .b {
   display: flex;
+  margin-top: 25px;
 }
 #left{
-  margin-left: 120px;
+  margin-left: 75px;
 }
 #right{
   margin-left: 60px;
