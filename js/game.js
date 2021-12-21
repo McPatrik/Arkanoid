@@ -277,11 +277,11 @@ const restart = document.getElementById("restart");
 restart.addEventListener("click", function(){
   location.reload();
 })
-left.addEventListener("pointerdown", lft);
-left.addEventListener("pointerup", lftr);
+left.addEventListener("touchstart", lft);
+left.addEventListener("touchend", lftr);
 
-right.addEventListener("pointerdown", lftq);
-right.addEventListener("pointerup", lftrw);
+right.addEventListener("touchstart", lftq);
+right.addEventListener("touchend", lftrw);
 
 function lft(){
    if (!mousePressedLeft) {
