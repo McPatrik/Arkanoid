@@ -283,6 +283,12 @@ left.addEventListener("touchend", lftr);
 right.addEventListener("touchstart", lftq);
 right.addEventListener("touchend", lftrw);
 
+left.addEventListener("mousedown", lft);
+left.addEventListener("mouseup", lftr);
+
+right.addEventListener("mousedown", lftq);
+right.addEventListener("mouseup", lftrw);
+
 function lft(){
    if (!mousePressedLeft) {
   mousePressedLeft = true;
