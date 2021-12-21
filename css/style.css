@@ -6,7 +6,7 @@ html {
   overflow: hidden;
 }
 
-img {
+.btn {
   pointer-events: none;
 }
 canvas {
