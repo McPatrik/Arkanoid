@@ -5,6 +5,10 @@
 html {
   overflow: hidden;
 }
+
+img {
+  pointer-events: none;
+}
 canvas {
   max-width: 100%;
   max-height: 100%;
